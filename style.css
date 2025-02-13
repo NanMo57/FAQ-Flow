@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s all linear;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+header{
+    box-shadow: 2px 2px 5px 2px rgb(225, 222, 222);
+    padding: 20px 10%;
+}
+header *{
+    letter-spacing: 5px;
+}
+h1{
+    font-size:30px;
+}
+h1,li a{
+    text-transform: capitalize;
+}
+.firstTitle{
+    text-shadow: 2px 2px 2px rgb(175, 184, 184);
+}
+.secondTitle{
+    color: #49a6e9;
+    text-shadow: 2px 2px 2px rgb(175, 184, 184);
+}
+.Pages{
+    align-items: center;
+}
+.Pages li{
+    padding:0;
+}
+.Pages li a{
+    font-size: 20px;
+}
+.Pages li a:hover{
+    color:#49a6e9
+}
+.social i{
+    color: #49a6e9;
+    font-size: 18px;
+}
+.social i:hover{
+    color: #7ab9e6;
+}
+.fa-bars,.fa-xmark{
+    font-size: 30px;
+}
+.fa-xmark{
+    display:none;
+    color: red;
+    cursor: pointer;
+}
+.fa-xmark:hover{
+    transform: rotate(360deg);
+    color: rgb(218, 79, 79);
+}
+.media_header{
+    display:none;
+}
+nav{
+    position:relative;
+    display: flex;
+    justify-content:space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.Pages{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.media_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/*****************media*********************/
+@media (min-width:1053px) and (max-width:1300px) {
+    header{
+         padding-right:2%;
+        padding-left:2%; 
+    }
+    nav{
+        display: flex !important;
+    }
+}
+@media (min-width:1300px) {
+    nav{
+        display: flex !important;
+    }
+}
+@media (max-width:1053px){
+    header{
+         padding-right:0;
+        padding-left:0; 
+    }
+    nav{
+        position: absolute;
+        top:0;
+        left: 0;
+        width:40%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+        padding-top:50px ;
+        background-color: white;
+        display: none;
+    }
+    .Pages{
+        align-items: flex-start;
+    }
+    .Pages li{
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .Pages li:hover{
+        background-color: #2d76a9;
+    }
+    .Pages li:hover a{
+        color: #7ab9e6;
+    }
+    .media_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+    }
+    .fa-xmark{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .Pages{
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .social i:hover{
+        color: #152d3f;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 86vh;
+}
+section h3{
+    font-size: 30px;
+    font-family: "Oleo Script", system-ui;
+    color: #c59d5f;
+}
+.Ques_block{
+    width: 35%;
+}
+.Ques_block > div{
+    width:100%;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 2px rgb(225, 222, 222);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.Ques_block > div > div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+}
+.Ques_block h4{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.Ques_block > div > div i{
+    padding: 5px;
+    border: 3px solid;
+    color: #c59d5f;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.Ques_block p{
+    padding-right:10px;
+    padding-left:10px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(207, 204, 204);
+    display: none;
+    line-height: 30px;
+    font-size: 20px;
+    color: hsl(210, 22%, 49%);
+}
+.Ques_block > div > div i:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
