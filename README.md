@@ -7,5 +7,5 @@ Hamburger Menu Toggle – Displays the navigation menu when the hamburger icon (
 Collapsible FAQ Section – Each FAQ question can expand or collapse to reveal its answer. Icons toggle between fa-plus and fa-minus to control this behavior.
 Smooth Transitions – Transitions are handled with JavaScript to smoothly toggle visibility without page reloads.
 
-🔗 [Live Demo (if available)]
+🔗 [Live Demo (https://nanmo57.github.io/FAQ-Flow/)]
 📌 Contributions & suggestions are welcome! 🚀
